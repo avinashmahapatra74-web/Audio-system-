@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#121212">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sound Effects Studio"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Master Switch -->
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/switchSoundEffect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enable Sound Enhancer"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Bass Control -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bass Boost (60Hz Sub-Punch)"
+        android:textColor="#BBBBBB"
+        android:textSize="14sp"/>
+
+    <SeekBar
+        android:id="@+id/seekBass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="1000"
+        android:progress="600"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Vocal / Mid Control -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vocal Clarity (1kHz Mids)"
+        android:textColor="#BBBBBB"
+        android:textSize="14sp"/>
+
+    <SeekBar
+        android:id="@+id/seekMids"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="1000"
+        android:progress="500"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Treble Control -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Treble Sparkle (12kHz Highs)"
+        android:textColor="#BBBBBB"
+        android:textSize="14sp"/>
+
+    <SeekBar
+        android:id="@+id/seekTreble"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="1000"
+        android:progress="400"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>
